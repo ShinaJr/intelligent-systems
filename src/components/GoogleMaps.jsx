@@ -65,6 +65,22 @@ function GoogleMaps() {
               pathCoordinates[pathCoordinates.length - 1].lng) /
             2,
         };
+
+        setPolylineInfoWindow(midPoint); // Set the position for the InfoWindow
+      });
+      polyline.addListener("click", () => {
+        // Calculate a position for the InfoWindow (e.g., the midpoint of the polyline)
+        const midPoint = {
+          lat:
+            (pathCoordinates[0].lat +
+              pathCoordinates[pathCoordinates.length - 1].lat) /
+            2,
+          lng:
+            (pathCoordinates[0].lng +
+              pathCoordinates[pathCoordinates.length - 1].lng) /
+            2,
+        };
+
         setPolylineInfoWindow(midPoint); // Set the position for the InfoWindow
       });
       polyline.addListener("mouseout", () => {
