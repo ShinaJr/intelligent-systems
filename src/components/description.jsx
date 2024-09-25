@@ -21,8 +21,8 @@ function Description() {
         traffic congestion.
       </p>
       <h2 className=" text-red-600 pt-5">
-        You can hover over the red lines on the map and click on the traffic
-        lights for more details on how the system operates.
+        You can hover or click over the red lines on the map and click on the
+        traffic lights to learn more about how the system operates.
       </h2>
     </div>
   );
